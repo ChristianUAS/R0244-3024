@@ -1,0 +1,56 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+h1 {
+  text-align: left;
+  font-size: 20px;
+}
+
+h2 {
+  text-align: left;
+  font-size: 20px;
+}
+
+p {
+  color: lightgray;
+  font-family: verdana;
+  font-size: 12px;
+}
+
+.Div1 {
+  border: 2px dotted white;
+  background-color: black;
+  text-align: left;
+  width: 100px;
+  height: 100px;
+}
+
+ul {
+  list-style-type: square;
+}
+
+ol {
+  list-style-type: upper-alpha;
+}
+
+/* unvisited link */
+a:link {
+  color: white;
+}
+
+/* visited link */
+a:visited {
+  color: lightslategray;
+}
+
+/* mouse over link */
+a:hover {
+  color: lightgray;
+}
+
+/* selected link */
+a:active {
+  color: azure;
+}
