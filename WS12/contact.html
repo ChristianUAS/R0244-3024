@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+  <!-- Override CSS-->
+  <link rel="stylesheet" href="./styles/styles.css">
+
+  <title>Contact UNATCO</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta name="description" content="Contact UNATCO or report suspicious persons through an easy-to-use web form.">
+  <meta name="keywords" content="HTML, CSS">
+  <meta name="author" content="anonymous">
+</head>
+
+<body>
+  <!-- Navbar start, sticks to top of page-->
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark navbar-custom">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" href="./index.html">Home</a>
+          <a class="nav-link" href="./news.html">Events and News</a>
+          <a class="nav-link" href="./about.html">About Us</a>
+          <a class="nav-link active" aria-current="page" href="#">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar end-->
+  <!-- Logo bar start-->
+  <div class="container-fluid">
+    <div class="rowimg-contact d-flex align-items-center">
+      <div class="col-1 p-3 header-logo">
+        <img src="./images/Unoct_UN_version.png" alt="UNATCO" width="75" height="75" class="center"
+          title="United Nations Anti-Terrorist Coalition">
+      </div>
+      <div class="col-2 p-3 header-title">
+        <h1><b>UNATCO</b></h1>
+      </div>
+      <div class="col-2 p-3 header-desc">
+        <h6>United Nations <br>Anti-Terrorist Coalition</h6>
+      </div>
+      <div class="col">
+      </div>
+    </div>
+  </div>
+  <!-- Logo bar end-->
+
+  <!-- News contents -->
+  <div class="container-fluid">
+    <!-- Main News Heading -->
+    <h2 class="m-4">Contact UNATCO</h2>
+
+    <!-- Main News Row -->
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item bg-dark text-light">
+        <h2 class="accordion-header" id="flush-headingOne">
+          <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            Contact UNATCO
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Fill out this form to contact UNATCO. Input your personal details first, then
+            select the reason of your contact request.<br>If you'd like to file a report on a
+            suspicious person, use the form under "Report a person".</div>
+          <div class="row">
+            <form class="row g-3">
+              <div class="col-md-3 m-3">
+                <label for="fname" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="fname">
+              </div>
+              <div class="col-md-3 m-3">
+                <label for="mname" class="form-label">Middle Name(s)</label>
+                <input type="text" class="form-control" id="mname">
+              </div>
+              <div class="col-md-3 m-3">
+                <label for="lname" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="lname">
+              </div>
+              <div class="col-4 m-3">
+                <label for="inputAddress" class="form-label">Address</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+              </div>
+              <div class="col-4 m-3">
+                <label for="inputAddress2" class="form-label">Address 2</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+              </div>
+              <div class="col-md-4 m-3">
+                <label for="inputCity" class="form-label">City</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+              <div class="col-md-4 m-3">
+                <label for="inputState" class="form-label">State or Province</label>
+                <input type="text" class="form-control" id="inputState">
+                </select>
+              </div>
+              <div class="col-md-2 m-3">
+                <label for="inputZip" class="form-label">Zip</label>
+                <input type="text" class="form-control" id="inputZip">
+              </div>
+              <div class="col-md-4 m-3">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail4">
+              </div>
+              <div class="col-md-4 m-3">
+                <label for="inputPhone" class="form-label">Phone Number</label>
+                <input type="tel" class="form-control" id="inputPhone">
+              </div>
+              <div class="col-md-4 m-3">
+                <label for="inputReason" class="form-label">Select the reason for your contact request</label>
+                <select id="inputReason" class="form-select">
+                  <option selected>Choose...</option>
+                  <option>I want to work at UNATCO</option>
+                  <option>I have information that UNATCO might be interested in</option>
+                  <option>I want to learn more about UNATCO</option>
+                  <option>I want to report myself for committing or planning to commit terrorist acts</option>
+                  <option>My organisation wants to collaborate with UNATCO</option>
+                </select>
+              </div>
+              <div class="form-floating col-md-4 m-3 text-white-50 text-shadow-none">
+                <textarea class="form-control" placeholder="Additional information" id="floatingTextarea2" style="height: 100px"></textarea>
+                <label for="floatingTextarea2">Provide additional information regarding your contact request</label>
+              </div>
+              <div class="col-12 m-3">
+                <button type="button" class="btn btn-primary" id="liveToastBtn">Submit</button>
+                <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                  <div id="liveToast" class="toast bg-dark" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="toast-header bg-dark">
+                      <img src="./favicon.ico" class="rounded me-2" alt="...">
+                      <strong class="me-auto">UNATCO</strong>
+                      <small>Contact UNATCO</small>
+                      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                    <div class="toast-body">
+                      Contact request submitted succesfully.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item bg-dark text-light">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            Report a person
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+            <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being
+            filled with some actual content.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item bg-dark text-light">
+        <h2 class="accordion-header" id="flush-headingThree">
+          <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            Apply for a job at UNATCO
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+            <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting
+            happening here in terms of content, but just filling up the space to make it look, at least at first glance,
+            a bit more representative of how this would look in a real-world application.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- /.row -->
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start footer-custom">
+      <!-- Section: Social media -->
+      <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+          <span></span>
+        </div>
+        <!-- Left -->
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Section: Links  -->
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 text-center col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- UNATCO descriptor -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                UNATCO
+              </h6>
+              <p>
+                The United Nations Anti-Terrorist Coalition (UNATCO) is a branch of the United Nations created
+                as a response to the growing threat of international terrorism.
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 text-center col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                Useful links
+              </h6>
+              <p>
+                <a href="./index.html" class="text-reset">Home</a>
+              </p>
+              <p>
+                <a href="./news.html" class="text-reset">News</a>
+              </p>
+              <p>
+                <a href="./about.html" class="text-reset">About</a>
+              </p>
+              <p>
+                <a href="./contact.html" class="text-reset">Contact</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 text-center col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Contact -->
+              <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+              Liberty Island, New York, NY 10004, <br>United States of America</p>
+              <p>
+
+                info@unatco.org
+              </p>
+              <p> + 01 234 567 88</p>
+              <p> + 01 234 567 89</p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+
+      <!-- Copyright -->
+      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2052 Copyright:
+        <a class="text-reset fw-bold" href="#">UNATCO.org</a>
+        <br>Use of this site constitutes consent to monitoring.
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+    <!-- Bootstrap JS Bundle, including Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"></script>
+
+    <script>const toastTrigger = document.getElementById('liveToastBtn')
+      const toastLiveExample = document.getElementById('liveToast')
+      if (toastTrigger) {
+        toastTrigger.addEventListener('click', () => {
+          const toast = new bootstrap.Toast(toastLiveExample)
+
+          toast.show()
+        })
+      }</script>
+
+</body>
+
+</html>
