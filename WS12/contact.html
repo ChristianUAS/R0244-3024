@@ -69,16 +69,19 @@
         <h2 class="accordion-header" id="flush-headingOne">
           <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse"
             data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-            Contact UNATCO
+            General contact request
           </button>
         </h2>
         <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
           data-bs-parent="#accordionFlushExample">
           <div class="accordion-body">Fill out this form to contact UNATCO. Input your personal details first, then
-            select the reason of your contact request.<br>If you'd like to file a report on a
+            select the reason of your contact request.<br><br>If you'd like to file a report on a
             suspicious person, use the form under "Report a person".</div>
           <div class="row">
             <form class="row g-3">
+              <div class="m-3">
+                <h5>Personal details</h5>
+              </div>
               <div class="col-md-3 m-3">
                 <label for="fname" class="form-label">First Name</label>
                 <input type="text" class="form-control" id="fname">
@@ -106,7 +109,6 @@
               <div class="col-md-4 m-3">
                 <label for="inputState" class="form-label">State or Province</label>
                 <input type="text" class="form-control" id="inputState">
-                </select>
               </div>
               <div class="col-md-2 m-3">
                 <label for="inputZip" class="form-label">Zip</label>
@@ -132,7 +134,8 @@
                 </select>
               </div>
               <div class="form-floating col-md-4 m-3 text-white-50 text-shadow-none">
-                <textarea class="form-control" placeholder="Additional information" id="floatingTextarea2" style="height: 100px"></textarea>
+                <textarea class="form-control" placeholder="Additional information" id="floatingTextarea2"
+                  style="height: 100px"></textarea>
                 <label for="floatingTextarea2">Provide additional information regarding your contact request</label>
               </div>
               <div class="col-12 m-3">
@@ -159,14 +162,200 @@
         <h2 class="accordion-header" id="flush-headingTwo">
           <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse"
             data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-            Report a person
+            Report a suspicious person
           </button>
         </h2>
         <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
           data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
-            <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being
-            filled with some actual content.
+          <div class="accordion-body">If you suspect a person of committing or planning to commit terrorist acts, drug
+            trafficking, software piracy, or money laundering, fill out this form to report them to UNATCO. Input the
+            personal details of the suspicious person first, then
+            select the crimes that you suspect them of planning or committing. Your anonymity when submitting a report
+            will be guaranteed.<br><br>If you'd like to contact UNATCO for other reasons, use the
+            form under "General contact request".
+            <div class="row">
+              <form class="row g-3">
+                <div class="m-3">
+                  <h5>Suspicious person & crime details</h5>
+                </div>
+                <div class="col-md-3 m-3">
+                  <label for="crimefname" class="form-label">First Name</label>
+                  <input type="text" class="form-control" id="crimefname">
+                </div>
+                <div class="col-md-3 m-3">
+                  <label for="crimemname" class="form-label">Middle Name(s)</label>
+                  <input type="text" class="form-control" id="crimemname">
+                </div>
+                <div class="col-md-3 m-3">
+                  <label for="crimelname" class="form-label">Last Name</label>
+                  <input type="text" class="form-control" id="crimelname">
+                </div>
+                <div class="col-md-3 m-3">
+                  <label for="crimealias" class="form-label">Alias(es) (if any)</label>
+                  <input type="text" class="form-control" id="crimealias">
+                </div>
+                <div class="col-md-1 m-3">
+                  <label for="crimeAge" class="form-label">Age (estimate)</label>
+                  <input type="text" class="form-control" id="crimeAge">
+                </div>
+                <div class="col-md-3 m-3">
+                  <label for="crimegroup" class="form-label">Associates with following organisation(s) (if any)</label>
+                  <input type="text" class="form-control" id="crimegroup">
+                </div>
+                <div class="col-md-2 m-3">
+                  <label for="crimeLastSeen" class="form-label">Last seen (location and time)</label>
+                  <input type="text" class="form-control" id="crimeLastSeen">
+                </div>
+                <div class="col-4 m-3">
+                  <label for="crimeinputAddress" class="form-label">Address</label>
+                  <input type="text" class="form-control" id="crimeinputAddress" placeholder="1234 Main St">
+                </div>
+                <div class="col-4 m-3">
+                  <label for="crimeinputAddress2" class="form-label">Address 2</label>
+                  <input type="text" class="form-control" id="crimeinputAddress2"
+                    placeholder="Apartment, studio, or floor">
+                </div>
+                <div class="col-md-4 m-3">
+                  <label for="crimeinputCity" class="form-label">City</label>
+                  <input type="text" class="form-control" id="crimeinputCity">
+                </div>
+                <div class="col-md-4 m-3">
+                  <label for="crimeinputState" class="form-label">State or Province</label>
+                  <input type="text" class="form-control" id="crimeinputState">
+                </div>
+                <div class="col-md-2 m-3">
+                  <label for="crimeinputZip" class="form-label">Zip</label>
+                  <input type="text" class="form-control" id="crimeinputZip">
+                </div>
+                <div class="col-md-4 m-3">
+                  <label for="crimeinputEmail4" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="crimeinputEmail4">
+                </div>
+                <div class="col-md-4 m-3">
+                  <label for="crimeinputPhone" class="form-label">Phone Number</label>
+                  <input type="tel" class="form-control" id="crimeinputPhone">
+                </div>
+                <div class="col-md-8 m-3">Select the crimes that you suspect this person of being involved in
+                  <div class="m-1 form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Terrorism (planning)
+                    </label>
+                  </div>
+                  <div class="m-1 form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Terrorism (committing)
+                    </label>
+                  </div>
+                  <div class="m-1 form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Terrorism (recruiting)
+                    </label>
+                  </div>
+                  <div class="m-1 form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Terrorism (funding)
+                    </label>
+                  </div>
+                  <div class="m-1 form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Sympathetic to terrorists or terrorist organisations
+                    </label>
+                  </div>
+                  <br>
+                  <div class="m-1 form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Drug trafficking (planning)
+                    </label>
+                  </div>
+                  <div class="m-1 form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Drug trafficking (committing)
+                    </label>
+                  </div>
+                  <div class="m-1 form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Drug trafficking (recruiting)
+                    </label>
+                  </div>
+                  <div class="m-1 form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Drug trafficking (funding)
+                    </label>
+                  </div>
+                  <div class="m-1 form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Sympathetic to drug traffickers or drug trafficking organisations
+                    </label>
+                  </div>
+                  <br>
+                  <div class="m-1 form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Software piracy (planning to commit piracy)
+                    </label>
+                  </div>
+                  <div class="m-1 form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Software piracy (spreading information on how to commit piracy)
+                    </label>
+                  </div>
+                  <div class="m-1 form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Software piracy (committing)
+                    </label>
+                  </div>
+                  <div class="m-1 form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Sympathetic to pirates or pirating organisations
+                    </label>
+                  </div>
+                  <br>
+                  <div class="m-1 form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Money laundering
+                    </label>
+                  </div>
+
+                </div>
+                <div class="form-floating col-md-4 m-3 text-white-50 text-shadow-none">
+                  <textarea class="form-control" placeholder="Additional information" id="crimefloatingTextarea2"
+                    style="height: 100px"></textarea>
+                  <label for="crimefloatingTextarea2">Provide additional information regarding the suspicious person or
+                    their crimes</label>
+                </div>
+                <div class="col-12 m-3">
+                  <button type="button" class="btn btn-primary" id="crimeliveToastBtn">Submit</button>
+                  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                    <div id="crimeliveToast" class="toast bg-dark" role="alert" aria-live="assertive"
+                      aria-atomic="true">
+                      <div class="toast-header bg-dark">
+                        <img src="./favicon.ico" class="rounded me-2" alt="...">
+                        <strong class="me-auto">UNATCO</strong>
+                        <small>Contact UNATCO</small>
+                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                      </div>
+                      <div class="toast-body">
+                        Suspicious person report submitted succesfully.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>
@@ -179,111 +368,153 @@
         </h2>
         <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
           data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
-            <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting
-            happening here in terms of content, but just filling up the space to make it look, at least at first glance,
-            a bit more representative of how this would look in a real-world application.
-          </div>
+          <div class="accordion-body">Currently, UNATCO is not hiring. Come back to this page another day to see if any
+            positions have opened.
+          </div> <!-- This is a small easter egg which can be triggered by clicking the "Submit?" button on the last form.-->
+          <div class="col-12 m-2">
+            <button type="button" class="btn btn-primary" id="jobliveToastBtn">Submit?</button>
+            <div class="toast-container position-fixed bottom-0 end-0 p-3">
+              <div id="jobliveToast" class="toast bg-dark" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header bg-dark">
+                  <img src="./images/Icarus.jpg" class="rounded me-2" alt="...">
+                  <strong
+                    class="me-auto">U̸̮͌̏͆̐̅̈ͅP̴̢̣̌̑̒͘Ņ̷̛̟̼̐͛͠E̵̦̺̰̯̗͐̑̈́̾̑T̵̪̤̦̟͈͉̾/̷͋ͅU̷͉̳̱̔̕͘͝S̸̙̞͇̜̫͕̀́͝Ê̵̪͈̟͚̪̽̕R̴̤̤̟̫͈͖͛̿̅͂͠/̷̡̜̬̣̥̆̋̈́̕͝ͅĮ̷́C̷̦̝̖͔̍̓̅A̶̛̳͂̈́R̷̪͖͙̈̈́͝U̴͕̞̥̦̓̅S̶̝͔̻̋ͅ</strong>
+                  <small>U̶͇͚͓̼̣͉̬̱͒̍͑̔͂̀̀̌̌̓N̷̡̠͕̗͍̺̩͙͇̬̭͒͜K̴̡̡̦̻̹̫̼̝̱̠̠̒̎̏ͅͅN̸͇̱̟̥̯̆͊͒̉͛̑̋̂̕͝Ó̸̙̜̟͖̙͕̜͔̲̜̤̮̫̤͆̆͌̆W̸̥͛͜Ǹ̴͕͉̖̠͔̳̞̘̟͘͜ͅ</small>
+                  <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                  Y̷o̷u̴r̸ ̵s̷y̶s̸t̷e̴m̶s̵ ̷w̶e̵r̶e̴ ̵v̷e̸r̴y̸ ̷c̸o̷o̸p̶e̶r̴a̷t̸i̵v̴e̶.̸ ̸U̶p̴l̴o̵a̴d̴
+                  ̷c̷o̸m̵p̵l̶e̷t̶e̴.̵
+                </div>
+              </div>
+            </div>
+          </div> <!-- Easter egg markup ends here -->
         </div>
       </div>
     </div>
+  </div>
+  <!-- /.row -->
 
-    <!-- /.row -->
+  <!-- Footer -->
+  <footer class="text-center text-lg-start footer-custom">
+    <!-- Section: Empty -->
+    <div class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    </div>
+    <!-- Section: Empty -->
 
-    <!-- Footer -->
-    <footer class="text-center text-lg-start footer-custom">
-      <!-- Section: Social media -->
-      <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-        <!-- Left -->
-        <div class="me-5 d-none d-lg-block">
-          <span></span>
-        </div>
-        <!-- Left -->
-      </section>
-      <!-- Section: Social media -->
-
-      <!-- Section: Links  -->
-      <section class="">
-        <div class="container text-center text-md-start mt-5">
-          <!-- Grid row -->
-          <div class="row mt-3">
-            <!-- Grid column -->
-            <div class="col-md-3 text-center col-lg-4 col-xl-3 mx-auto mb-4">
-              <!-- UNATCO descriptor -->
-              <h6 class="text-uppercase fw-bold mb-4">
-                UNATCO
-              </h6>
-              <p>
-                The United Nations Anti-Terrorist Coalition (UNATCO) is a branch of the United Nations created
-                as a response to the growing threat of international terrorism.
-              </p>
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="col-md-3 text-center col-lg-2 col-xl-2 mx-auto mb-4">
-              <!-- Links -->
-              <h6 class="text-uppercase fw-bold mb-4">
-                Useful links
-              </h6>
-              <p>
-                <a href="./index.html" class="text-reset">Home</a>
-              </p>
-              <p>
-                <a href="./news.html" class="text-reset">News</a>
-              </p>
-              <p>
-                <a href="./about.html" class="text-reset">About</a>
-              </p>
-              <p>
-                <a href="./contact.html" class="text-reset">Contact</a>
-              </p>
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="col-md-4 text-center col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-              <!-- Contact -->
-              <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-              Liberty Island, New York, NY 10004, <br>United States of America</p>
-              <p>
-
-                info@unatco.org
-              </p>
-              <p> + 01 234 567 88</p>
-              <p> + 01 234 567 89</p>
-            </div>
-            <!-- Grid column -->
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 text-center col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- UNATCO descriptor -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              UNATCO
+            </h6>
+            <p>
+              The United Nations Anti-Terrorist Coalition (UNATCO) is a branch of the United Nations created
+              as a response to the growing threat of international terrorism.
+            </p>
           </div>
-          <!-- Grid row -->
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 text-center col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Useful links
+            </h6>
+            <p>
+              <a href="./index.html" class="text-reset">Home</a>
+            </p>
+            <p>
+              <a href="./news.html" class="text-reset">News</a>
+            </p>
+            <p>
+              <a href="./about.html" class="text-reset">About</a>
+            </p>
+            <p>
+              <a href="./contact.html" class="text-reset">Contact</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 text-center col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Contact -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p>Liberty Island, New York, NY 10004, <br>United States of America</p>
+            <p>info@unatco.org</p>
+            <p> + 01 234 567 88</p>
+            <p> + 01 234 567 89</p>
+          </div>
+          <!-- Grid column -->
         </div>
-      </section>
-      <!-- Section: Links  -->
-
-      <!-- Copyright -->
-      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-        © 2052 Copyright:
-        <a class="text-reset fw-bold" href="#">UNATCO.org</a>
-        <br>Use of this site constitutes consent to monitoring.
+        <!-- Grid row -->
       </div>
-      <!-- Copyright -->
-    </footer>
-    <!-- Footer -->
+    </section>
+    <!-- Section: Links  -->
 
-    <!-- Bootstrap JS Bundle, including Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-      crossorigin="anonymous"></script>
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2052 Copyright:
+      <a class="text-reset fw-bold" href="#">UNATCO.org</a>
+      <br>Use of this site constitutes consent to monitoring.
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
 
-    <script>const toastTrigger = document.getElementById('liveToastBtn')
-      const toastLiveExample = document.getElementById('liveToast')
-      if (toastTrigger) {
-        toastTrigger.addEventListener('click', () => {
-          const toast = new bootstrap.Toast(toastLiveExample)
+  <!-- Bootstrap JS Bundle, including Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
 
-          toast.show()
-        })
-      }</script>
+
+  <!-- Three different toasts, one for each form, triggered when Submit is clicked -->
+  <!-- A separate script for each toast might not be the most efficient way to get it to work, 
+    but it is the method I figured out how to use on my own after hours of fruitless Googling and experimentation-->
+  <!-- General contact request toast -->
+
+  <script>const toastTrigger = document.getElementById('liveToastBtn')
+    const toastLiveExample = document.getElementById('liveToast')
+    if (toastTrigger) {
+      toastTrigger.addEventListener('click', () => {
+        const toast = new bootstrap.Toast(toastLiveExample)
+
+        toast.show()
+      })
+    }
+  </script>
+  <!-- -->
+
+  <!-- Report a suspicious person toast -->
+  <script>const crimetoastTrigger = document.getElementById('crimeliveToastBtn')
+    const crimetoastLiveExample = document.getElementById('crimeliveToast')
+    if (crimetoastTrigger) {
+      crimetoastTrigger.addEventListener('click', () => {
+        const toast = new bootstrap.Toast(crimetoastLiveExample)
+
+        toast.show()
+      })
+    }
+  </script>
+  <!-- -->
+
+  <!-- Apply for a job at UNATCO toast -->
+  <script>const jobtoastTrigger = document.getElementById('jobliveToastBtn')
+    const jobtoastLiveExample = document.getElementById('jobliveToast')
+    if (jobtoastTrigger) {
+      jobtoastTrigger.addEventListener('click', () => {
+        const toast = new bootstrap.Toast(jobtoastLiveExample)
+
+        toast.show()
+      })
+    }
+  </script>
+  <!-- -->
 
 </body>
 

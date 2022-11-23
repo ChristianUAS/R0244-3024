@@ -51,6 +51,16 @@ body {
   background-position: center;
 }
 
+.carousel-inner img {
+  margin: auto;
+}
+
+.carousel-caption {
+  margin: 50px;
+  padding: 65px;
+  background-color: #000000a0;
+}
+
 div.transbox {
   margin: 0px;
   padding: 65px;

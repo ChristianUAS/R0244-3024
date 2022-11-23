@@ -151,15 +151,10 @@
 
   <!-- Footer -->
   <footer class="text-center text-lg-start footer-custom">
-    <!-- Section: Social media -->
-    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-      <!-- Left -->
-      <div class="me-5 d-none d-lg-block">
-        <span></span>
-      </div>
-      <!-- Left -->
-    </section>
-    <!-- Section: Social media -->
+    <!-- Section: Empty -->
+    <div class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    </div>
+    <!-- Section: Empty -->
 
     <!-- Section: Links  -->
     <section class="">
@@ -204,11 +199,8 @@
           <div class="col-md-4 text-center col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
             <!-- Contact -->
             <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-            Liberty Island, New York, NY 10004, <br>United States of America</p>
-            <p>
-
-              info@unatco.org
-            </p>
+            <p>Liberty Island, New York, NY 10004, <br>United States of America</p>
+            <p>info@unatco.org</p>
             <p> + 01 234 567 88</p>
             <p> + 01 234 567 89</p>
           </div>
@@ -234,25 +226,25 @@
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"></script>
 
-  <script>
-    // Trigger button
-    let button = document.querySelector("#alert-btn");
-
-    // Alert container
-    let container = document.querySelector("#alert-container");
-
-    // Create click event listener on trigger button
-    button.addEventListener("click", () => {
-
-      // When user click on trigger #button, insert .alert element into #container
-      container.innerHTML =
-        `<div class="alert alert-success alert-dismissible fade show bg-dark text-light col-3" role="alert">    
-                database error! news not found
-                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-              </div>`
-        ;
-    });    
-  </script>
+    <script>
+      // Trigger button
+      let button = document.querySelector("#alert-btn");
+  
+      // Alert container
+      let container = document.querySelector("#alert-container");
+  
+      // Create click event listener on trigger button
+      button.addEventListener("click", () => {
+  
+        // When user click on trigger #button, insert .alert element into #container
+        container.innerHTML =
+          `<div class="alert alert-success alert-dismissible fade show bg-dark text-light col-3" role="alert">    
+                  database error! news not found
+                      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>`
+          ;
+      });    
+    </script>
 
 </body>
 
