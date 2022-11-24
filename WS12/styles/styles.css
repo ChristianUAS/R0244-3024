@@ -52,24 +52,13 @@ body {
 }
 
 .carousel-inner img {
-  margin: auto;
+  margin: auto !important;
 }
 
 .carousel-caption {
-  margin: 50px;
-  padding: 65px;
-  background-color: #000000a0;
-}
-
-div.transbox {
-  margin: 0px;
-  padding: 65px;
-  background-color: #000000a0;
-  border: 1px solid black;
-}
-
-div.transbox p {
-  margin: 5%;
+  margin: 50px !important;
+  padding: 65px !important;
+  background-color: #000000a0 !important;
 }
 
 .header-logo {

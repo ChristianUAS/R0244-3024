@@ -37,6 +37,9 @@
         </div>
       </div>
     </div>
+    <span class="navbar-text" style="margin-right: 30px; margin-top: 15px;">
+      <p id="date"></p>
+    </span>
   </nav>
   <!-- Navbar end-->
   <!-- Logo bar start-->
@@ -62,6 +65,9 @@
   <div class="container-fluid">
     <!-- Main News Heading -->
     <h2 class="m-4">Contact UNATCO</h2>
+    <p class="m-4">You should contact UNATCO if you have information regarding suspected acts of of terrorism (including violence,
+      funding, or recruitment), people sympathetic to terrorists or terrorist organizations, threats to global
+      security, or other violations of international law.</p>
 
     <!-- Main News Row -->
     <div class="accordion accordion-flush" id="accordionFlushExample">
@@ -370,7 +376,8 @@
           data-bs-parent="#accordionFlushExample">
           <div class="accordion-body">Currently, UNATCO is not hiring. Come back to this page another day to see if any
             positions have opened.
-          </div> <!-- This is a small easter egg which can be triggered by clicking the "Submit?" button on the last form.-->
+          </div>
+          <!-- This is a small easter egg which can be triggered by clicking the "Submit?" button on the last form.-->
           <div class="col-12 m-2">
             <button type="button" class="btn btn-primary" id="jobliveToastBtn">Submit?</button>
             <div class="toast-container position-fixed bottom-0 end-0 p-3">
@@ -515,6 +522,16 @@
     }
   </script>
   <!-- -->
+
+  <!-- Today's date + 2052 script. -->
+  <script>
+    n = new Date();
+    y = n.getFullYear();
+    m = n.getMonth() + 1;
+    d = n.getDate();
+    document.getElementById("date").innerHTML = d + "/" + m + "/" + 2052;
+  </script>
+  <!-- Date script ends -->
 
 </body>
 
