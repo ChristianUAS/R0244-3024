@@ -38,22 +38,21 @@
         </div>
       </div>
     </div>
-    <span class="navbar-text" style="margin-right: 30px; margin-top: 15px;">
-      <p id="date"></p>
+    <span class="navbar-text" id="date">
     </span>
   </nav>
   <!-- Navbar end-->
   <!-- Logo bar start-->
   <div class="container-fluid">
     <div class="rowimg-dish d-flex align-items-center">
-      <div class="col-1 p-3 header-logo">
+      <div class="col-md-1 col-sm-1 p-3 header-logo">
         <img src="./images/Unoct_UN_version.png" alt="UNATCO" width="75" height="75" class="center"
           title="United Nations Anti-Terrorist Coalition">
       </div>
-      <div class="col-2 p-3 header-title">
+      <div class="col-md-2 col-sm-2 p-3 header-title">
         <h1><b>UNATCO</b></h1>
       </div>
-      <div class="col-2 p-3 header-desc">
+      <div class="col-md-1 col-sm-1 p-3 header-desc">
         <h6>United Nations <br>Anti-Terrorist Coalition</h6>
       </div>
       <div class="col">
@@ -62,20 +61,20 @@
   </div>
   <!-- Logo bar end-->
 
-  <!-- News contents -->
+  <!-- About UNATCO contents -->
   <div class="container-fluid">
-    <!-- Main News Heading -->
+    <!-- Main Heading -->
     <h2 class="m-4">About UNATCO</h2>
 
-    <!-- Main News Row -->
+    <!-- Main Row -->
     <div class="row">
 
-      <div class="col-8">
+      <div class="col-md-8">
         <img class="img-fluid m-4" src="./images/UNATCO-Map1-2560x1191px-darkblue-darkgray.png" alt="UN Member States"
           title="UN Member States">
       </div>
 
-      <div class="col-4">
+      <div class="col-md-4">
         <h3 class="my-3">UNATCO is FAIR, JUST, and VIGILANT.</h3>
         <p>UNATCO is a branch of the United Nations, created in 2051 to combat the growing threat of international
           terrorism. With its headquarters on Liberty Island in New York, United States, and regional offices around the
@@ -96,7 +95,9 @@
         </p>
       </div>
 
-      <div class="col">
+      <!-- How to recognize terrorists -->
+
+      <div class="col-md-8">
         <h3 class="m-4">Be Safe: Be Suspicious</h3>
         <p class="m-4">Terrorism has become an unfortunate fact of life around the world,
           a direct assault on our communities and our way of life that leaves citizens struggling to find answers to
@@ -104,7 +105,8 @@
           <br><br>
           Quite simply, terrorism is successful because terrorists are able to pass unnoticed and unremarked upon — but
           they fail to count on the best intelligence network ever devised: the ordinary citizens. How can you tell who
-          might be a terrorist? Look for the following characteristics:</p>
+          might be a terrorist? Look for the following characteristics:
+        </p>
         <ul class="m-4">
           <li>A stranger or a foreigner.</li>
           <li>Argumentative, especially about politics or philosophy.</li>
@@ -120,9 +122,8 @@
           your neighbors will sleep more securely knowing that you're watching each other's backs.</p>
       </div>
 
-      <div class="col-5">
-        <img class="img-fluid m-4" src="./images/Unoct_UN_version.png" alt="UNATCO Logo"
-          title="UNATCO Logo">
+      <div class="col-md-3">
+        <img class="img-fluid m-4" src="./images/Unoct_UN_version.png" alt="UNATCO Logo" title="UNATCO Logo">
       </div>
 
     </div>
@@ -198,7 +199,35 @@
     <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
       © 2052 Copyright:
       <a class="text-reset fw-bold" href="#">UNATCO.org</a>
-      <br>Use of this site constitutes consent to monitoring.
+      <br>
+      Use of this site constitutes consent to monitoring.
+      <br>
+      <br>
+      <a href="#Disclaimer" data-bs-toggle="modal" data-bs-target="#disclaimerModal">Disclaimer</a>
+
+      <!-- Modal -->
+      <div class="modal fade" id="disclaimerModal" tabindex="-1" aria-labelledby="disclaimerModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="disclaimerModalLabel">Disclaimer</h1>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              This website is a work of fiction, <br>based on the video game <a href="https://en.wikipedia.org/wiki/Deus_Ex_(video_game)">Deus Ex (2000).</a><br><br>Any resemblance to
+              actual events or real persons, living or dead, is
+              entirely coincidental. No government agency or international organization has approved, endorsed, or
+              authorized the use of their names or logos, or the website itself.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
     <!-- Copyright -->
   </footer>

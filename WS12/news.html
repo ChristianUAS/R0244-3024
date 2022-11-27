@@ -37,22 +37,21 @@
         </div>
       </div>
     </div>
-    <span class="navbar-text" style="margin-right: 30px; margin-top: 15px;">
-      <p id="date"></p>
+    <span class="navbar-text" id="date">
     </span>
   </nav>
   <!-- Navbar end-->
   <!-- Logo bar start-->
   <div class="container-fluid">
     <div class="rowimg-news d-flex align-items-center">
-      <div class="col-1 p-3 header-logo">
+      <div class="col-md-1 col-sm-1 p-3 header-logo">
         <img src="./images/Unoct_UN_version.png" alt="UNATCO" width="75" height="75" class="center"
           title="United Nations Anti-Terrorist Coalition">
       </div>
-      <div class="col-2 p-3 header-title">
+      <div class="col-md-2 col-sm-2 p-3 header-title">
         <h1><b>UNATCO</b></h1>
       </div>
-      <div class="col-2 p-3 header-desc">
+      <div class="col-md-1 col-sm-1 p-3 header-desc">
         <h6>United Nations <br>Anti-Terrorist Coalition</h6>
       </div>
       <div class="col">
@@ -69,11 +68,11 @@
     <!-- Main News Row -->
     <div class="row">
 
-      <div class="col-5">
+      <div class="col-md-5">
         <img class="img-fluid m-4" src="./images/plane-750x500.jpg" alt="La Guardia Aiport" title="La Guardia Airport">
       </div>
 
-      <div class="col-7">
+      <div class="col-md-7">
         <h3 class="m-4">Terrorist Attack at La Guardia</h3>
         <h6 class="m-4 text-primary">New York, United States of America</h6>
         <h6 class="m-4 text-primary">51 minutes ago</h6>
@@ -94,12 +93,12 @@
 
     <div class="row">
 
-      <div class="col-5">
+      <div class="col-md-5">
         <img class="img-fluid m-4" src="./images/statue-of-liberty-at-twilight-750x500.jpg" alt="Statue of Liberty"
           title="Statue of Liberty">
       </div>
 
-      <div class="col-7">
+      <div class="col-md-7">
         <h3 class="m-4">Liberty Island Under Attack</h3>
         <h6 class="m-4 text-primary">New York, United States of America</h6>
         <h6 class="m-4 text-primary">2 hours ago</h6>
@@ -114,12 +113,12 @@
 
     <div class="row">
 
-      <div class="col-5">
+      <div class="col-md-5">
         <img class="img-fluid m-4" src="./images/night-helicopter-750x500.jpg" alt="UNATCO helicopter"
           title="UNATCO helicopter">
       </div>
 
-      <div class="col-7">
+      <div class="col-md-7">
         <h3 class="m-4">New Equipment For UNATCO</h3>
         <h6 class="m-4 text-primary">Global</h6>
         <h6 class="m-4 text-primary">13 hours ago</h6>
@@ -140,12 +139,12 @@
 
     <div class="row">
 
-      <div class="col-5">
+      <div class="col-md-5">
         <img class="img-fluid m-4" src="./images/paris-750x500.jpg" alt="Paris Streets"
           title="Paris Streets">
       </div>
 
-      <div class="col-7">
+      <div class="col-md-7">
         <h3 class="m-4">Anti-Terror Operation in Paris</h3>
         <h6 class="m-4 text-primary">Paris, France</h6>
         <h6 class="m-4 text-primary">1 day ago</h6>
@@ -164,11 +163,11 @@
 
     <div class="row">
 
-      <div class="col-5">
+      <div class="col-md-5">
         <img class="img-fluid m-4" src="./images/globe-750x500.jpg" alt="The Net" title="The Net">
       </div>
 
-      <div class="col-7">
+      <div class="col-md-7">
         <h3 class="m-4">The Aquinas Protocol Inaugurated</h3>
         <h6 class="m-4 text-primary">Global</h6>
         <h6 class="m-4 text-primary">2 days ago</h6>
@@ -187,10 +186,14 @@
       </div>
 
       <div class="container">
+        <div class="row">
+        <div class="col-md-6">
         <button id="alert-btn" class='btn btn-dark m-4' data-target='#myalert' data-toggle='modal'>Load More
           News</button>
         <div id="alert-container"></div>
+        </div>
 
+      </div>
       </div>
     </div>
     <!-- /.row -->
@@ -268,7 +271,35 @@
     <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
       © 2052 Copyright:
       <a class="text-reset fw-bold" href="#">UNATCO.org</a>
-      <br>Use of this site constitutes consent to monitoring.
+      <br>
+      Use of this site constitutes consent to monitoring.
+      <br>
+      <br>
+      <a href="#Disclaimer" data-bs-toggle="modal" data-bs-target="#disclaimerModal">Disclaimer</a>
+
+      <!-- Modal -->
+      <div class="modal fade" id="disclaimerModal" tabindex="-1" aria-labelledby="disclaimerModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="disclaimerModalLabel">Disclaimer</h1>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              This website is a work of fiction, <br>based on the video game <a href="https://en.wikipedia.org/wiki/Deus_Ex_(video_game)">Deus Ex (2000).</a><br><br>Any resemblance to
+              actual events or real persons, living or dead, is
+              entirely coincidental. No government agency or international organization has approved, endorsed, or
+              authorized the use of their names or logos, or the website itself.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
     <!-- Copyright -->
   </footer>
@@ -293,7 +324,7 @@
       container.innerHTML =
         `<div class="alert alert-success alert-dismissible fade show bg-dark text-light col-3" role="alert">    
                   database error! news not found
-                      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>`
         ;
     });    
